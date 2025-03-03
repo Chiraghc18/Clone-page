@@ -1,0 +1,164 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  transition: 0.2s ease;
+  box-sizing: border-box;
+}
+
+.nav-bar {
+    height: 6.5vh;
+    background-color: black;
+}
+
+.container-categories{
+
+    position: absolute;
+    top: 100%; /* Position below the button */
+    left: 0;
+    
+    background-color: gray;
+    color: white;
+    width:70vw;
+    margin-left:15vh;
+    margin-right:15vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    padding: 1vw;
+    border-bottom-left-radius:0.5vw;
+    border-bottom-right-radius:0.5vw;
+
+
+}
+
+.gen{
+  font-size: 2vw;
+}
+.container-genre
+{
+    margin-top: 4vh;
+    width:28vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.genres
+{
+    height: 5vh;
+    width: 13vw;
+    font-size: 1.4vw;
+    border-radius:0.5vw;
+    padding: 3px;
+}
+
+.genres:hover
+{
+    background-color: white;
+    color: black;
+   
+}
+
+
+/* search bar */
+
+.search-bar
+{
+    background-color: #807f80;
+    color: white;
+    width:70vw;
+    margin-left:15vw;
+    margin-right:15vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    padding: 1vw;
+}
+
+.search-bar-content
+{
+    background-color: gray;
+    width:67vw;
+    height: 10vh;
+    border-radius: 0.5vw;
+    padding:1vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.search-bar-content .fa-magnifying-glass
+{
+    font-size:2vw;
+    
+}
+.search-bar-content .search-input
+{
+    font-size: 4vh;
+    border: none; /* Removes the border */
+    background-color: transparent; /* Makes the background transparent */
+    outline: none; /* Optional: Removes the outline when the input is focused */
+    
+}
+
+.search-bar-content .search-input::placeholder {
+    color: white; /* Change this to your desired color */
+}
+
+
+.search-bar-content .search-input:focus {
+    outline: none; /* Removes the focus outline */
+}
+.search-bar-content i {
+    margin-right: 1vw; /* Adjust the value as needed */
+}
+
+
+/*  language start*/
+
+.lang-container
+{
+    background-color: rgba(16, 16, 25, 0.8);
+    color: white;
+    width:70vw;
+    margin-left:15vw;
+    margin-right:15vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    flex-wrap: wrap;
+    padding-left: 1.5vw;
+    padding-right:1.5vw;
+    padding-top: 1vw;
+    padding-bottom:1vw;
+}
+
+.lang-item
+{
+    height:6.5vh;
+    width:13vw;
+    padding:1vw; 
+    margin:0.5vw;
+    font-size: 1.5vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.lang-item:hover
+{
+    background-color: white;
+    border-radius: 0.5vw;
+    color: black;
+}

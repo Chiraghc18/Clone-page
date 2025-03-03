@@ -1,0 +1,554 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    color: aliceblue;
+}
+
+.h:hover{
+    cursor:pointer;
+}
+/* Block 1 */
+.block1 {
+    position: relative; /* Set position to relative for proper z-index stacking */
+    height: 800px;
+    opacity: 0.9;/* Set z-index to position the background behind content */
+    background-color: black;
+}
+
+.block1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("background-img.jpg"); 
+    background-size: cover;
+    z-index: -1; 
+   
+}
+
+
+/* box1 */
+.box1
+{
+   height: 100px;
+   margin-left: 100px;
+   margin-right: 100px;
+   display: flex;
+   align-items: center;
+}
+
+.square
+{
+    color: rgb(229,9,20);
+    width: 80%;
+    display: flex;
+    font-size: 400%;
+    font-weight: 600;
+    align-items: center;
+}
+
+.lang-sel{
+    
+    height:50%;
+    width:150px;
+    background: none;
+    border: 3px solid white;
+    border-radius: 6px;
+}
+.lang-op{
+    color: black;
+    font-size:20px ;
+    font-weight: 600;
+}
+
+.sign-in{
+    margin-left:10px ;
+    height:50%;
+    width:150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(255, 0, 0, 0.8);
+    border-radius: 9px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    border: 0.8px;
+}
+
+/* box 2 */
+.box2{
+    margin-top: 100px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.message{  
+    
+    display: inline-block;
+    line-height: 100px;
+    font-family: Helvetica,sans-serif;
+}
+
+.message1{
+    position: inline;
+    font-weight: 900;
+    font-size: 48px;
+}
+.message2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.message3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.enter-email
+{
+     line-height: 1.5;
+     height: 65px;
+     width: 500px;;
+     background-color:rgba(134, 123, 123,0.3); 
+     
+     border: 1px solid #ccc;
+} 
+.enter-email:active{
+    border: 1px solid red;
+}    
+.login-start{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+    background-color: rgba(255, 0, 0, 0.8);
+    border-radius: 10px;
+    height: 70px;
+    width: 205px;
+    font-size:30px ;
+}
+
+
+::placeholder {
+    position: absolute;
+    left: 20px;
+    top: 18px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 1)
+}
+input[type="text"] {
+    font-size: 20px; 
+}
+
+.p1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+      
+}
+/* end of block 1 */
+
+.hr1{
+    background-color: rgba(26, 24, 24, 0.9);
+    height:10px;
+    border:none
+}
+
+/* block2 */
+.block2{
+    width: 100%;
+    height: 560px;
+    background-color: black;
+    padding:4.5rem 0;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.message4{
+    width:620px;
+    margin-right:10px ;
+}
+
+.message4-1{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.message4-2{
+    
+    margin-top:16px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 24px;
+}
+
+.block2img{
+    height: 350px;
+    width: 500px;
+    background-image: url(block2.png);
+    background-size: cover;
+}
+
+/* block3 */
+
+.block3{
+    width: 100%;
+    height: 560px;
+    background-color: black;
+    padding:4.5rem 0;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.message5{
+    width:620px;
+    margin-right:10px ;
+}
+
+.message5-1{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.message5-2{
+    
+    margin-top:16px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 24px;
+}
+
+.block3img{
+    height: 400px;
+    width: 500px;
+    background-image: url(block3.png);
+    background-size:contain;
+    display: flex;
+    justify-content: center;
+    align-items:end;
+}
+
+.block3-1{
+    position: relative;
+    z-index:2;
+    background-color: black;
+    width: 60%;
+    height: 100px;
+    padding: 0.35rem 0.75rem;
+    border: 2px solid rgba(128,128,128,0.7);
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+}
+
+.block3-1-img{
+     background-image: url(block3-1.png);
+     background-size:contain;
+     height: 100%;
+     width:3.75rem;
+}
+
+
+/* block 4 */
+
+.block4{
+    width: 100%;
+    height: 560px;
+    background-color: black;
+    padding:4.5rem 0;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.message6{
+    width:620px;
+    margin-right:10px ;
+}
+
+.message6-1{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.message6-2{
+    
+    margin-top:16px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 24px;
+}
+
+.block4img{
+    height: 350px;
+    width: 500px;
+    background-image: url(block4.png);
+    background-size: cover;
+}
+
+
+/* block 5 */
+
+.block5{
+    width: 100%;
+    height: 560px;
+    background-color: black;
+    padding:4.5rem 0;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.message7{
+    width:620px;
+    margin-right:10px ;
+}
+
+.message7-1{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.message7-2{
+    
+    margin-top:16px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 24px;
+}
+
+.block5img{
+    height: 350px;
+    width: 500px;
+    background-image: url(block5.png);
+    background-size: cover;
+}
+
+/* block 6 */
+.block6{
+    width: 100%;
+    height: 800px;
+    background-color: black;
+    padding:4.5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainblock{
+    width: 80%;
+    margin-bottom: 20px;
+}
+.block6header{
+    font-size: 3rem;
+    font-weight:700 ;
+    
+    text-align: center;
+}
+.b6-content{
+    padding: 1.5rem;
+    display: flex;
+    justify-content:flex-start;
+    height: 72px;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: rgba(26, 24, 24, 0.9);
+}
+
+.b6-content-text{
+    font-size:1.5rem;
+    width:95%;
+}
+
+.b6-content-plus{
+    height: 24px;
+    width: 5%;
+    font-size: 40px;   
+}
+
+
+
+/* Responsive Design */
+
+/* For screens smaller than 1200px */
+@media (max-width: 1200px) {
+    .box1 {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .square {
+        font-size: 300%;
+    }
+    .enter-email {
+        width: 400px;
+    }
+}
+
+/* For tablets and small laptops (max-width: 992px) */
+@media (max-width: 992px) {
+    .box1 {
+        flex-direction: column;
+        text-align: center;
+    }
+    .square {
+        width: 100%;
+        justify-content: center;
+    }
+    .sign-in {
+        width: 120px;
+        font-size: 1.2rem;
+    }
+    .message1 {
+        font-size: 36px;
+    }
+    .message2,
+    .message3 {
+        font-size: 20px;
+    }
+    .login {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .enter-email {
+        width: 100%;
+    }
+}
+
+/* For mobile screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .block1 {
+        height: auto;
+        padding: 20px;
+    }
+    .box1 {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .square {
+        font-size: 250%;
+        text-align: center;
+    }
+    .sign-in {
+        width: 100px;
+        font-size: 1rem;
+    }
+    .message {
+        text-align: center;
+        line-height: normal;
+    }
+    .message1 {
+        font-size: 28px;
+    }
+    .message2,
+    .message3 {
+        font-size: 18px;
+    }
+    .enter-email {
+        width: 90%;
+        height: 50px;
+    }
+    .login-start {
+        width: 180px;
+        height: 60px;
+        font-size: 24px;
+    }
+    .block2,
+    .block3,
+    .block4,
+    .block5,
+    .block6 {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 2rem 1rem;
+    }
+    .block2img,
+    .block3img,
+    .block4img,
+    .block5img {
+        width: 90%;
+        height: auto;
+        margin-top: 20px;
+    }
+}
+
+/* For very small screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .square {
+        font-size: 200%;
+    }
+    .sign-in {
+        width: 90px;
+        font-size: 0.9rem;
+    }
+    .message1 {
+        font-size: 24px;
+    }
+    .message2,
+    .message3 {
+        font-size: 16px;
+    }
+    .enter-email {
+        height: 45px;
+    }
+    .login-start {
+        width: 160px;
+        height: 55px;
+        font-size: 22px;
+    }
+    .block6header {
+        font-size: 2rem;
+    }
+    .b6-content {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+    }
+    .b6-content-text {
+        font-size: 1.2rem;
+        width: 100%;
+    }
+    .b6-content-plus {
+        font-size: 30px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,63 @@
+
+/* search bar */
+
+.search-bar
+{
+    color: white;
+    background-color: rgba(16, 16, 25, 0.9);
+    width:70vw;
+    margin-left:15vw;
+    margin-right:15vw;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    padding: 1vw;
+    z-index:10;
+    position: absolute;
+    top: 6.5vh;
+}
+
+.search-bar-content
+{
+    border: 2px solid white;
+    background-color: #908c90;
+    width:67vw;
+    height: 8vh;
+    border-radius: 0.5vw;
+    padding:0.7vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.search-bar-content .fa-magnifying-glass
+{
+    font-size:1.7vw;
+    
+}
+.search-bar-content .search-input
+{
+    font-size: 3.5vh;
+    width:62vw;
+    color: white;
+    cursor: pointer;
+    border: none; /* Removes the border */
+    background-color: transparent; /* Makes the background transparent */
+    outline: none; /* Optional: Removes the outline when the input is focused */
+    
+}
+
+.search-bar-content .search-input::placeholder {
+    color: white; /* Change this to your desired color */
+}
+
+
+.search-bar-content .search-input:focus {
+    outline: none; /* Removes the focus outline */
+}
+.search-bar-content i {
+    margin-right: 1vw; /* Adjust the value as needed */
+}
